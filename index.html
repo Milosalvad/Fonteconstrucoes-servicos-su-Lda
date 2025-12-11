@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FonteConstruções.co.mz - Reforma e Construção Civil em Moçambique e Região</title>
+    <meta name="description" content="Construção e reforma residencial e comercial com qualidade, prazo e preço justo. Mais de 15 anos de experiência em São Paulo e Grande SP.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        :root {
+            --primary:rgb(146, 142, 122);
+            --secondary: #f39c12;
+            --dark:rgb(54, 113, 172);
+            --light: #ecf0f1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header / Hero */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            min-height: 600px;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-content h1 {
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+        
+        .hero-content p {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            font-size: 1.1rem;
+        }
+        
+        .btn:hover {
+            background: #e67;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* Seções */
+        section {
+            padding: 80px 0;
+        }
+        
+        .sobre {
+            background: #f8f9fa;
+        }
+        
+        .servicos {
+            background: white;
+        }
+        
+        .depoimentos {
+            background: var(--light);
+            text-align: center;
+        }
+        
+        .contato {
+            background: var(--dark);
+            color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 2.5rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            width: 100px;
+            height: 4px;
+            background: var(--secondary);
+            display: block;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+        .servicos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .servico-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+        
+        .servico-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .servico-card i {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        /* WhatsApp Fixo */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header Hero -->
+    <header>
+        <div class="container hero-content">
+            <h1>FonteConstruções & Serviços. SU, Lda</h1>
+            <p>Construção e reforma de alto padrão com qualidade, prazo e preço justo.<br>Estamos comprometidos em transformar sonhos em realidade em Moçambique e região.</p>
+            <a href="#contato" class="btn">Solicite seu Orçamento Gratuito</a>
+        </div>
+    </header>
+    
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2 class="section-title">Quem Somos</h2>
+            <p style="text-align:center; font-size:1.2rem; max-width:900px;">
+                A <strong>FonteConstruções & Serviços. SU, Lda</strong> é uma empresa especializada em construção civil, reformas residenciais e comerciais com atuação em Moçambique, na Província de Maputo, na Cidade de Maputo e na região.<br><br>
+                Trabalhamos com equipe própria altamente qualificada, materiais de primeira linha e total transparência em todas as etapas da obra. Nosso compromisso é entregar o seu projeto no prazo combinado, dentro do orçamento e com acabamento impecável.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Serviços -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Construção Residencial</h3>
+                    <p>Casas e sobrados do zero ao acabamento, com projetos personalizados e acompanhamento de engenheiro.</p>
+                </div>
+                
+                <div class="servico-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Reforma de Apartamentos e Casas</h3>
+                    <p>Reformas completas ou parciais: Alvenaria,pintura, elétrica, hidráulica, gesso, porcelanato, Serrelharia, carpintaria etc.</p>
+                </div>
+                
+                <div class="servico-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Construção e Reforma Comercial</h3>
+                    <p>Lojas, escritórios, clínicas e galpões comerciais com projetos modernos e funcionais.</p>
+                </div>
+                
+                <div class="servico-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Manutenção e Pequenos Reparos</h3>
+                    <p>Serviços rápidos de pedreiro, pintor, eletricista, Canalisador e serralheiro .</p>
+                </div>
+                
+                <div class="servico-card">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Projetos e Aprovação</h3>
+                    <p>Elaboração de projetos arquitetônicos que recebe aprovação do Ministério das obras Públicas e Habitação.</p>
+                </div>
+                
+                <div class="servico-card">
+                    <i class="fas fa-hard-hat"></i>
+                    <h3>Regularização de Imóveis</h3>
+                    <p>Averbação, Habite-se e regularização junto aos órgãos competentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Depoimentos -->
+    <section class="depoimentos">
+        <div class="container">
+            <h2 class="section-title"> O que nossos clientes dizem</h2>
+            <p style="font-size:1.3rem; font-style:italic; max-width:800px; margin:0 auto;">
+                “Contratei a FonteConstruções & Serviços, para reformar meu apartamento de 120m² em Mathidjana. Equipe é caprichosa, limpa e pontual. Recomendo 100%!”<br>
+                <strong>— Helena vasconselho, Cidade de Maputo</strong>
+            </p>
+            <p style="font-size:1.3rem; font-style:italic; max-width:800px; margin:40px auto 0;">
+                “Construíram minha casa do zero, estão a decorrer com o melhor empenho e proficionalismo, estou Satisfeito, a obra está sendo Executada dentro do orçamento combinado. Qualidade excelente!”<br>
+                <strong>— Abreu Cossa, Michafutene</strong>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Contato -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2 class="section-title" style="color:white;">Fale Conosco</h2>
+            
+            <p style="text-align:center; font-size:1.2rem; margin-bottom:40px;">
+                Solicite agora seu orçamento sem compromisso!<br>
+                Respondemos em até 2 horas úteis.
+            </p>
+            
+            <p style="text-align:center;">
+                <i class="fas fa-phone"></i> +258 847767745 / +258 833825537<br>
+                <i class="fas fa-envelope"></i> fonteconstrucoes@gmail.com / Alternativo / milosalvado@gmail.com<br>
+                <i class="fas fa-email"></i> info@fonteconstrucoes.co.mz
+                <i class="fab fa-whatsapp" style="color:#25d366;"></i> +258 847767745
+            </p>
+            
+            <div style="text-align:center; margin-top:40px;">
+                <a href="https://wa.me/258847767745?text=Olá! Gostaria de solicitar um orçamento para reforma/construção." class="btn" style="background:#25d366;">
+                    <i class="fab fa-whatsapp"></i> Conversar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/258847767745?text=Olá! Vim pelo site e gostaria de um orçamento." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FonteConstruções & Serviços. SU, Lda Todos os direitos reservados. | MZ 00.000.000/0045-00</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
